@@ -1,17 +1,7 @@
 {
   "_desc": "Site-wide SEO and infrastructure. Feeds <title>, meta tags, canonical URLs, OG/Twitter cards, JSON-LD, sitemap and manifest. Person-level facts come from profile.json; 'knowsAbout' is derived from skills.json.",
-  "_sources": "siteTitle/description/keywords DERIVED from resume professional summary + GitHub bio. domain/ogImage/favicon/analytics: NOT PROVIDED — see report.",
-  "_fields": {
-    "domain": "Deployment domain incl. https:// — canonical URL, sitemap, OG links.",
-    "siteTitle": "Home page <title>. Reference pattern: '{Name} - {Job Title}'.",
-    "description": "1-2 sentence meta description (~150 chars). Also used in JSON-LD.",
-    "keywords": "SEO keywords as an array of strings.",
-    "ogImage": "Path under /images/meta/ (1200x630), or 'generate' for a simple text-based one.",
-    "favicon": "Path to an icon file under /images/meta/, or 'generate-from-initials'.",
-    "analytics": "'umami' | 'none' | other tool name.",
-    "analyticsUrl": "Public analytics script URL (not a secret). \"\" if none."
-  },
-  "domain": "",
+  "_sources": "siteTitle/description/keywords DERIVED from resume professional summary + GitHub bio.",
+  "domain": "https://portfolio.vercel.app",
   "siteTitle": "Mit Patel - AI Engineer",
   "description": "AI engineer specializing in machine learning, NLP, Generative AI, and RAG pipelines — building end-to-end AI solutions from data engineering to scalable deployment.",
   "keywords": [
@@ -31,6 +21,6 @@
   ],
   "ogImage": "",
   "favicon": "",
-  "analytics": "",
+  "analytics": "none",
   "analyticsUrl": ""
 }
