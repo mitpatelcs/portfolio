@@ -1,0 +1,13 @@
+{
+  "_desc": "OPTIONAL section (enable in config.json). Talks, podcasts, workshops, panels — renders as a list in the blog-row visual language. One object per talk.",
+  "_fields": {
+    "title": "Talk/episode title.",
+    "event": "Conference/meetup/podcast name.",
+    "date": "'Month YYYY'.",
+    "url": "Recording/slides link, \"\" if none.",
+    "description": "One-liner about the talk."
+  },
+  "items": [
+    { "title": "", "event": "", "date": "", "url": "", "description": "" }
+  ]
+}

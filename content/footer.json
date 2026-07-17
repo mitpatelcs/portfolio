@@ -1,0 +1,11 @@
+{
+  "_desc": "Footer: 'Navigate' column (page links), 'Connect' column (auto-filled from socials.json), and the copyright line.",
+  "_fields": {
+    "navigateOverride": "Leave [] to auto-generate from enabled sections (Home, Work, Blog, Resume, Projects, Gears, Setup, Terminal, Books, Movies, RSS — only the enabled ones). Or supply [{label, href}] to control it manually.",
+    "copyrightName": "Name in '© {year} {name}. All rights reserved.' \"\" = defaults to profile.json fullName.",
+    "extraLinks": "Anything extra that isn't a page or social: [{label, href}]."
+  },
+  "navigateOverride": [],
+  "copyrightName": "",
+  "extraLinks": []
+}

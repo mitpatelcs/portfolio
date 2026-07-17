@@ -1,0 +1,17 @@
+{
+  "_desc": "OPTIONAL /setup page (enable in config.json) — step-by-step editor setup guide (numbered steps, kbd chips, download buttons, collapsible code panels with copy buttons) + its home 'Development' card.",
+  "_fields": {
+    "subtitle": "Page subtitle. Reference: 'Complete guide to setting up VSCode / Cursor with my settings.'",
+    "homeCardDescription": "One-liner on the home card. Reference: 'VSCode / Cursor configuration and extensions guide.'",
+    "editors": "Editor names the guide targets. Reference: ['VS Code', 'Cursor'].",
+    "downloads": "Download buttons: [{ label, file }] — put the actual files in content/images/setup/ (served from /images/setup/) or provide them and I'll place them.",
+    "settingsFile": "Path to your editor settings JSON shown in the collapsible 'Show' panel. Example: 'content/setup-settings.json' (any text file path works).",
+    "steps": "Leave [] to use the reference flow (download files -> install extensions via command palette -> paste settings -> done). Or define custom steps: [{ title, substeps: [{ text, kbd, code, downloadRef }] }]."
+  },
+  "subtitle": "",
+  "homeCardDescription": "",
+  "editors": [],
+  "downloads": [{ "label": "", "file": "" }],
+  "settingsFile": "",
+  "steps": []
+}

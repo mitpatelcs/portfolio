@@ -1,0 +1,20 @@
+{
+  "_desc": "Rotating quote card rendered above the footer on every page (reference feature). Quotes auto-rotate with a smooth fade; add/remove items freely — the rotation adapts. Toggled via config.json features.quotes; rotation interval in seconds below.",
+  "_sources": "Seeded with the reference portfolio's own quote list (ramxcodes/sleek-portfolio src/config/Quote.ts, MIT) so the section works out of the box — replace with your own favorites anytime.",
+  "_fields": {
+    "intervalSeconds": "How long each quote stays before fading to the next.",
+    "items": "[{ quote, author }]"
+  },
+  "intervalSeconds": 8,
+  "items": [
+    { "quote": "A man who is master of patience is master of everything else.", "author": "George Savile" },
+    {
+      "quote": "You have a right to perform your prescribed duty, but you are not entitled to the fruits of actions.",
+      "author": "Bhagavad Gita"
+    },
+    { "quote": "Man is made by his belief. As he believes, so he is.", "author": "Bhagavad Gita" },
+    { "quote": "Arise, awake, and stop not till the goal is reached.", "author": "Katha Upanishad" },
+    { "quote": "If the pain doesn't kill me, it will only make me stronger.", "author": "Sung Jin-Woo, Solo Leveling" },
+    { "quote": "I'll take a potato chip… AND EAT IT!", "author": "Light Yagami, Death Note" }
+  ]
+}

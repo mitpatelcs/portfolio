@@ -1,0 +1,34 @@
+{
+  "_desc": "Work history — one object per role, most recent first. Home shows the first 3 compactly; /work shows all in full (tech chips + bullets).",
+  "_sources": "Internship certificate from Astha Technology Solutions Pvt. Ltd. (dated 14/07/2026): 'Machine Learning Engineer Intern', 19th May 2026 to 13th July 2026. CONFIRMED by Mit (2026-07-17): show only verified certificate facts — location, technologies, and highlights stay empty by decision, and the UI omits those blocks when empty.",
+  "_fields": {
+    "company": "Company name (H3).",
+    "kind": "'full-time' | 'internship' | 'freelance' | 'founding' | 'contract'.",
+    "role": "Role title under the company.",
+    "isCurrent": "true = green '● Working' badge and 'Present' end date.",
+    "start": "'Month YYYY'.",
+    "end": "'Month YYYY', or \"\" if isCurrent.",
+    "location": "Long form, e.g. 'Surat, India (On-Site)' or 'Remote (India)'. NEEDED.",
+    "locationShort": "Mobile form, e.g. 'Surat, IN'. NEEDED.",
+    "technologies": "Tech/tool names used in this role. NEEDED.",
+    "highlights": "'What I've done' — 3-5 factual bullets. NEEDED (certificate wording is generic).",
+    "companyUrl": "Optional link for the company name.",
+    "logo": "Optional; reference v2 shows no logos."
+  },
+  "items": [
+    {
+      "company": "Astha Technology Solutions Pvt. Ltd.",
+      "kind": "internship",
+      "role": "Machine Learning Engineer Intern",
+      "isCurrent": false,
+      "start": "May 2026",
+      "end": "July 2026",
+      "location": "",
+      "locationShort": "",
+      "technologies": [],
+      "highlights": [],
+      "companyUrl": "",
+      "logo": ""
+    }
+  ]
+}

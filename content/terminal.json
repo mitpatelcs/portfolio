@@ -1,0 +1,18 @@
+{
+  "_desc": "OPTIONAL /terminal page (enable in config.json) — shell setup guide (prerequisites, install one-liner, config steps, collapsible config panels, source-repo card) + its home 'Development' card.",
+  "_fields": {
+    "subtitle": "Page subtitle. Reference: 'Below is my terminal setup configuration.'",
+    "homeCardDescription": "One-liner on the home card. Reference: 'Zsh, Starship, Fastfetch, and shell configuration.'",
+    "prerequisites": "[{ name, description }] shown as numbered rows. Reference: Zsh / Git / Homebrew.",
+    "installCommand": "Install one-liner rendered as a copyable code block (use \\n for line breaks), OR point installCommandFile at a text file instead.",
+    "configFiles": "[{ title, file, language }] — each renders as a collapsible 'Show' panel with copy. Example: .zshrc, fastfetch config. Put contents in files like 'content/terminal-zshrc.txt'.",
+    "sourceRepo": "{ name, url, description } for the 'Source Repository' card at the bottom. Reference: ramxcodes/term-conf. Leave name \"\" to omit the card."
+  },
+  "subtitle": "",
+  "homeCardDescription": "",
+  "prerequisites": [{ "name": "", "description": "" }],
+  "installCommand": "",
+  "installCommandFile": "",
+  "configFiles": [{ "title": "", "file": "", "language": "" }],
+  "sourceRepo": { "name": "", "url": "", "description": "" }
+}

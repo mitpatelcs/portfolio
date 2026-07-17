@@ -1,0 +1,26 @@
+{
+  "_desc": "Education — enabled in config.json; renders as timeline rows in the Experience visual language.",
+  "_sources": "Resume education section (verbatim). LinkedIn confirms PDEU.",
+  "_fields": {
+    "institution": "School/university name.",
+    "degree": "Degree/program.",
+    "start": "'Month YYYY' or 'YYYY'.",
+    "end": "'Month YYYY' / 'YYYY' / 'Present'.",
+    "location": "City, Country.",
+    "details": "Optional bullets (GPA, coursework, societies) — facts only."
+  },
+  "subtitle": "My academic background.",
+  "items": [
+    {
+      "institution": "Pandit Deendayal Energy University",
+      "degree": "Bachelor of Technology in Computer Science",
+      "start": "2023",
+      "end": "2027",
+      "location": "Gandhinagar, India",
+      "details": [
+        "CGPA: 8.97",
+        "Relevant Coursework: Machine Learning, Deep Learning, Artificial Intelligence, Data Structures & Algorithms, Database Management Systems, Probability & Statistics"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "_desc": "Sticky header nav links. Reference: Home, Work, Blog, Resume. Labels/order editable; each href must be a page that exists and is enabled in config.json.",
+  "links": [
+    { "label": "Home", "href": "/" },
+    { "label": "Work", "href": "/work" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Resume", "href": "/resume" }
+  ]
+}

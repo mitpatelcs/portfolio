@@ -1,0 +1,22 @@
+{
+  "_desc": "Your core identity — referenced by the hero, SEO/JSON-LD, footer copyright, and anywhere else your name appears. Fill once, used everywhere.",
+  "_sources": "Resume (header), GitHub profile (bio, location), LinkedIn (location), internship certificate (name).",
+  "_fields": {
+    "fullName": "Your name (hero H1, JSON-LD, copyright fallback).",
+    "alias": "Online handle(s) woven into descriptions. Reference: 'ramxcodes / ramx'.",
+    "jobTitle": "Professional title for SEO/JSON-LD. Example: 'Full Stack Web Developer'.",
+    "email": "Public email — shown in the hero with click-to-copy and used for the email social icon.",
+    "location": "Optional 'City, Country' — not rendered on the reference layout, kept for future use.",
+    "avatar.image": "Path under /images/profile/. Reference uses a square pixel-art portrait.",
+    "avatar.alt": "Alt text for the avatar image."
+  },
+  "fullName": "Mit Patel",
+  "alias": "mitpatelcs",
+  "jobTitle": "AI Engineer",
+  "email": "mit.p30082@gmail.com",
+  "location": "Gandhinagar, India",
+  "avatar": {
+    "image": "/images/profile/mit-patel.jpg",
+    "alt": "Mit Patel"
+  }
+}

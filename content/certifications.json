@@ -1,0 +1,46 @@
+{
+  "_desc": "Certifications — display order fixed by Mit's instruction (2026-07-17): 1. Power BI & Tableau Workshop, 2. Google Autonomous Hackathon, 3. Cognivia Hackathon, 4. NPTEL Human Computer Interaction.",
+  "_sources": "Certificate documents (primary), cross-checked with LinkedIn and the resume. CONFLICTS RESOLVED by Mit (2026-07-17): hackathon displays as 'Google Autonomous Hackathon — January 2026' (certificate says 'Autonomous Hacks 26'; LinkedIn's 'Jan 2025' overridden by decision); NPTEL displays as 'NPTEL Human Computer Interaction' (certificate-exact course title: 'Human Computer Interaction (In Hindi)'); Power BI entry stays certificate-exact (resume's 'Microsoft Power BI' framing not used); Cognivia uses the provided IEEE participation certificate (LinkedIn's Unstop Phase-1 credential 8c50c4f5… is a different document, not shown).",
+  "_extraFacts": "NPTEL: consolidated score 94% (assignments 25/25, proctored exam 69/75), 12-week course, Roll No NPTEL25CS112S556300044, 729 candidates certified, credits recommended 3-4, LinkedIn issue date Dec 2025. The schema has no score field — say the word if you want the score displayed and I'll extend the schema.",
+  "_fields": {
+    "name": "Certification name.",
+    "issuer": "Issuing org.",
+    "date": "'Month YYYY'.",
+    "url": "Verification/credential URL, \"\" if none.",
+    "image": "Optional certificate image under /images/certifications/.",
+    "description": "Optional clean one-line summary shown on the card (falls back to issuer when empty)."
+  },
+  "subtitle": "Workshops, hackathons, and course credentials.",
+  "items": [
+    {
+      "name": "Power BI & Tableau Workshop",
+      "issuer": "Society of Mathematics, Pandit Deendayal Energy University",
+      "date": "March 2024",
+      "url": "https://drive.google.com/file/d/1zSN1MI1oTZq_Vd7sCDyFO8KuMLVlRWVs/view?usp=sharing",
+      "image": "/images/certifications/powerbi-tableau-workshop.jpg"
+    },
+    {
+      "name": "Google Autonomous Hackathon",
+      "issuer": "Google Developer Groups Gandhinagar & GDG Cloud Gandhinagar",
+      "date": "January 2026",
+      "url": "https://drive.google.com/file/d/1dDiBXsi6mZ5OTFIu0DG3odn955xkigEI/view?usp=sharing",
+      "image": "/images/certifications/autonomous-hacks-26.jpg",
+      "description": "Agentic AI Hackathon organized by Google Developer Groups Gandhinagar & GDG Cloud Gandhinagar."
+    },
+    {
+      "name": "Cognivia Hackathon",
+      "issuer": "IEEE WIE Student Branch Affinity Group PDEU, IEEE Student Branch PDEU, IEEE WIE Affinity Group Gujarat Section & IEEE Gujarat Section (IEEE Sampark 2026)",
+      "date": "January 2026",
+      "url": "https://drive.google.com/file/d/1s5GzjLwRisMM6hDFGfQdXgrM0E4GFWMH/view?usp=sharing",
+      "image": "/images/certifications/cognivia-hackathon.png",
+      "description": "Cognivia Hackathon organized as part of IEEE Sampark 2026 at PDEU."
+    },
+    {
+      "name": "NPTEL Human Computer Interaction",
+      "issuer": "NPTEL",
+      "date": "Jul–Oct 2025",
+      "url": "https://drive.google.com/file/d/1u2MUatOuKAAACZusPQahOd4bnYAt1nj-/view?usp=sharing",
+      "image": "/images/certifications/nptel-hci.png"
+    }
+  ]
+}

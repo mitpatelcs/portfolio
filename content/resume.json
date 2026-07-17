@@ -1,0 +1,14 @@
+{
+  "_desc": "/resume page — H1 + subtitle + embedded PDF (70vh iframe, rounded border).",
+  "_sources": "Google Drive link provided by Mit in chat (2026-07-17). The build converts /view links to /preview for the iframe.",
+  "_fields": {
+    "subtitle": "Page subtitle (reference UI copy).",
+    "source": "'drive' | 'file'.",
+    "driveUrl": "Google Drive share URL (must be link-visible).",
+    "file": "Path to a self-hosted PDF (alternative)."
+  },
+  "subtitle": "View and download my professional resume.",
+  "source": "drive",
+  "driveUrl": "https://drive.google.com/file/d/1fcziKq7h4ggptGrY8bcjN7E0ntiQGdmT/view?usp=sharing",
+  "file": ""
+}

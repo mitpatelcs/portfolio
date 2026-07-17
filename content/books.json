@@ -1,0 +1,13 @@
+{
+  "_desc": "OPTIONAL /books page + its card in the home 'Personal' section (enable in config.json). Books are grouped by theme; each group renders an H2 + 2-column card grid (title + author). One object per book.",
+  "_fields": {
+    "subtitle": "Page subtitle. Reference: 'A collection of books that have influenced my thinking and growth.'",
+    "homeCardDescription": "One-liner on the home card. Reference: 'Books that have influenced my thinking and growth.'",
+    "groups": "[{ theme, items: [{ title, author }] }]. Reference themes: 'Power & Influence', 'Mastery & Focus', 'Discipline & Grit', 'Meaning & Mind', 'Habits & Systems', 'Attention & Dopamine', 'Creativity', 'Big Ideas'."
+  },
+  "subtitle": "",
+  "homeCardDescription": "",
+  "groups": [
+    { "theme": "", "items": [{ "title": "", "author": "" }] }
+  ]
+}

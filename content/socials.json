@@ -1,0 +1,18 @@
+{
+  "_desc": "Social links — rendered as the hero icon row (with hover tooltips) and the footer 'Connect' buttons. Array order = display order. Only entries with a URL appear; removing/adding entries collapses/expands the layout automatically.",
+  "_sources": "URLs provided by Mit in chat (2026-07-17). Order confirmed by Mit (revision request): LinkedIn, GitHub, X, Medium, Instagram, Facebook, Email. Pinterest removed per the same request. Icons render in the reference's Phosphor duotone style.",
+  "_fields": {
+    "platform": "One of: x, linkedin, github, youtube, instagram, pinterest, medium, facebook, email, other.",
+    "url": "Full URL (or mailto: for email — \"\" on the email row auto-uses profile.json email).",
+    "label": "Only needed for platform 'other' — the tooltip/aria label."
+  },
+  "items": [
+    { "platform": "linkedin", "url": "https://www.linkedin.com/in/mitpatelcs/" },
+    { "platform": "github", "url": "https://github.com/mitpatelcs" },
+    { "platform": "x", "url": "https://x.com/mitpatel308" },
+    { "platform": "medium", "url": "https://medium.com/@mit.p30082" },
+    { "platform": "instagram", "url": "https://www.instagram.com/mitpatell9x/" },
+    { "platform": "facebook", "url": "https://www.facebook.com/profile.php?id=100092479239800" },
+    { "platform": "email", "url": "" }
+  ]
+}

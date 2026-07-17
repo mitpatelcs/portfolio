@@ -1,0 +1,41 @@
+{
+  "_desc": "Icon registry for technology chips (used by experience/projects 'technologies' lists, and skills if displayed). Unregistered names render with a default icon and a build-time warning — never a failure.",
+  "_sources": "Aligned with Mit's canonical skills list (confirmed 2026-07-17) plus the techs appearing in project lists. 'icon' values: simple-icons slugs for concrete tools; 'lucide:' prefixed names for conceptual areas without brand icons (icon choice is presentational and adjustable).",
+  "_fields": {
+    "name": "Exact name as used in 'technologies'/skills arrays.",
+    "icon": "simple-icons slug, 'lucide:<icon-name>', or path to a custom SVG.",
+    "url": "Optional homepage (not rendered on reference)."
+  },
+  "items": [
+    { "name": "Python", "icon": "python", "url": "" },
+    { "name": "SQL", "icon": "lucide:database", "url": "" },
+    { "name": "C", "icon": "c", "url": "" },
+    { "name": "Machine Learning", "icon": "lucide:brain", "url": "" },
+    { "name": "Deep Learning", "icon": "lucide:network", "url": "" },
+    { "name": "Natural Language Processing", "icon": "lucide:message-square-text", "url": "" },
+    { "name": "NLP", "icon": "lucide:message-square-text", "url": "" },
+    { "name": "Generative AI", "icon": "lucide:sparkles", "url": "" },
+    { "name": "TensorFlow", "icon": "tensorflow", "url": "" },
+    { "name": "LangChain", "icon": "langchain", "url": "" },
+    { "name": "Retrieval-Augmented Generation (RAG)", "icon": "lucide:file-search", "url": "" },
+    { "name": "Scikit-Learn", "icon": "scikitlearn", "url": "" },
+    { "name": "FastAPI", "icon": "fastapi", "url": "" },
+    { "name": "Hugging Face", "icon": "huggingface", "url": "" },
+    { "name": "Pydantic", "icon": "pydantic", "url": "" },
+    { "name": "Git", "icon": "git", "url": "" },
+    { "name": "GitHub", "icon": "github", "url": "" },
+    { "name": "Docker", "icon": "docker", "url": "" },
+    { "name": "Streamlit", "icon": "streamlit", "url": "" },
+    { "name": "Linux/Bash", "icon": "linux", "url": "" },
+    { "name": "MySQL", "icon": "mysql", "url": "" },
+    { "name": "PostgreSQL", "icon": "postgresql", "url": "" },
+    { "name": "MongoDB", "icon": "mongodb", "url": "" },
+    { "name": "XGBoost", "icon": "lucide:trending-up", "url": "" },
+    { "name": "MLflow", "icon": "mlflow", "url": "" },
+    { "name": "OpenCV", "icon": "opencv", "url": "" },
+    { "name": "Computer Vision", "icon": "lucide:eye", "url": "" },
+    { "name": "Transfer Learning", "icon": "lucide:arrow-right-left", "url": "" },
+    { "name": "Flask", "icon": "flask", "url": "" },
+    { "name": "Keras", "icon": "keras", "url": "" }
+  ]
+}

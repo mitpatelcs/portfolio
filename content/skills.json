@@ -1,0 +1,15 @@
+{
+  "_desc": "Skill categories. Always feeds SEO/JSON-LD 'knowsAbout' (flattened). Rendered as a visible section only if enabled in config.json — currently false (the reference live site has no skills section); the data still improves SEO either way.",
+  "_sources": "Canonical skills list CONFIRMED by Mit (2026-07-17), superseding the resume extraction ('RAG' expanded to 'Retrieval-Augmented Generation (RAG)').",
+  "_fields": {
+    "category": "Group name.",
+    "items": "Skill names in that group."
+  },
+  "groups": [
+    { "category": "Programming Languages", "items": ["Python", "SQL", "C"] },
+    { "category": "Core Areas", "items": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Generative AI"] },
+    { "category": "Frameworks & Libraries", "items": ["TensorFlow", "LangChain", "Retrieval-Augmented Generation (RAG)", "Scikit-Learn", "FastAPI", "Hugging Face", "Pydantic"] },
+    { "category": "Tools & Platforms", "items": ["Git", "GitHub", "Docker", "Streamlit", "Linux/Bash"] },
+    { "category": "Databases", "items": ["MySQL", "PostgreSQL", "MongoDB"] }
+  ]
+}

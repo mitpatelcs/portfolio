@@ -1,0 +1,12 @@
+{
+  "_desc": "OPTIONAL /movies page + its card in the home 'Personal' section (enable in config.json). Single 2-column card grid: title + year. Films and shows both fine. One object per title.",
+  "_fields": {
+    "subtitle": "Page subtitle. Reference: 'Movies and shows that have inspired and entertained me.'",
+    "homeCardDescription": "One-liner on the home card. Reference: 'Films and shows that have inspired and entertained me.'"
+  },
+  "subtitle": "",
+  "homeCardDescription": "",
+  "items": [
+    { "title": "", "year": "" }
+  ]
+}

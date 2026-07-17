@@ -1,0 +1,13 @@
+{
+  "_desc": "OPTIONAL section (enable in config.json). Awards, hackathon wins, rankings, notable milestones — real accomplishments only. One object per achievement.",
+  "_fields": {
+    "title": "What you achieved.",
+    "context": "Where — event, org, competition.",
+    "date": "'Month YYYY' or 'YYYY'.",
+    "url": "Proof/press/link, \"\" if none.",
+    "image": "Optional image under /images/achievements/."
+  },
+  "items": [
+    { "title": "", "context": "", "date": "", "url": "", "image": "" }
+  ]
+}

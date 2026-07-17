@@ -1,0 +1,79 @@
+{
+  "_desc": "/projects — minimal list page: each entry is one row (name + one-liner), the whole row links out. Array order = page order (resume order kept: most recent first).",
+  "_sources": "Resume PROJECTS section (names, bullets, technologies, links extracted from PDF hyperlink annotations) cross-checked with GitHub repo READMEs and LinkedIn projects. Descriptions are one-line condensations of resume/README facts. 'XGBoost' normalized from resume typo 'XGBosst' (flagged in report). Deepfake project has no live demo (README: model exceeds free-tier hosting memory) so its row links to GitHub, per the schema rule.",
+  "_fields": {
+    "subtitle": "Page subtitle — DERIVED, reword freely.",
+    "name": "Project name (H2 in the row).",
+    "description": "One-liner, <= ~90 chars (clamps to 2 lines).",
+    "url": "Live URL the row links to (GitHub repo URL if no live demo).",
+    "github": "Repo URL kept for future-proofing (reference renders only the row link).",
+    "technologies": "From the resume 'Technologies / Tools Used' lines.",
+    "highlights": "Resume bullets, verbatim (not rendered on the reference list page; preserved as source of truth).",
+    "image": "Optional; not rendered on reference.",
+    "featured": "Optional flag for a future featured subset.",
+    "title": "Optional section title override shown as the page H1, home card, and footer label. Empty/absent = 'Projects'."
+  },
+  "subtitle": "AI Systems and experiments I've built end-to-end.",
+  "title": "",
+  "items": [
+    {
+      "name": "Deepfake Video Detection System",
+      "description": "Deepfake detection web app — face-focused pipeline with 0.85 ROC-AUC and 0.95 recall.",
+      "url": "https://github.com/mitpatelcs/DeepFakeVideoDetection",
+      "github": "https://github.com/mitpatelcs/DeepFakeVideoDetection",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "OpenCV",
+        "Computer Vision",
+        "Transfer Learning"
+      ],
+      "highlights": [
+        "Developed a Deepfake Video Detection web application using TensorFlow/Keras, OpenCV, Flask, and Gunicorn, achieving 0.85 ROC-AUC, 0.95 recall, and 0.92 F1-score for high-confidence video authenticity classification.",
+        "Engineered a computer-vision pipeline (YuNet face detection, InceptionV3 transfer learning, 2-layer GRU model) that lifted performance ROC-AUC from 0.59 to 0.85 via face-cropped frames, validated by cross-validation.",
+        "Implemented a deepfake video detection pipeline to generate confidence-scored authenticity predictions."
+      ],
+      "image": "",
+      "featured": false
+    },
+    {
+      "name": "US Visa Approval Prediction System",
+      "description": "End-to-end ML system predicting US visa approval outcomes across 25,000+ applications.",
+      "url": "https://github.com/mitpatelcs/usvisaprediction",
+      "github": "https://github.com/mitpatelcs/usvisaprediction",
+      "technologies": [
+        "Python",
+        "Scikit-Learn",
+        "XGBoost",
+        "FastAPI",
+        "MLflow"
+      ],
+      "highlights": [
+        "Developed a modular, end-to-end machine learning system for over 25,000 US visa applications. Integrated data validation quality protocols, preprocessing, feature engineering, model training, evaluation, and inference.",
+        "Enhanced an XGBoost classifier through hyperparameter tuning and probability threshold optimization, achieving a 91.83% recall, 73.07% precision, 81.39% F1-score, and 71.94% accuracy using MLflow.",
+        "Built Dockerized FastAPI application with automated workflows for real-time US visa approval predictions."
+      ],
+      "image": "",
+      "featured": false
+    },
+    {
+      "name": "Movie Recommendation System",
+      "description": "Content-based movie recommender over 4,800+ films, serving top-5 picks via Streamlit.",
+      "url": "https://github.com/mitpatelcs/MovieRecommender-app",
+      "github": "https://github.com/mitpatelcs/MovieRecommender-app",
+      "technologies": [
+        "Python",
+        "NLP",
+        "Scikit-Learn",
+        "Streamlit"
+      ],
+      "highlights": [
+        "Developed a Movie Recommendation System utilizing NLP feature engineering on over 4,800 movies. Integrated cast, crew, genres, plots, and overviews into feature vectors for personalized recommendations.",
+        "Utilized CountVectorizer and cosine similarity from scikit-learn to compute content similarity between movies, accurately delivering the top-5 most similar titles as ranked recommendations from aggregated feature vectors.",
+        "Created a Streamlit web app for instant personalized movie recommendations based on user-selected titles."
+      ],
+      "image": "",
+      "featured": false
+    }
+  ]
+}

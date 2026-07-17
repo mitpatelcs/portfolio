@@ -1,0 +1,14 @@
+{
+  "_desc": "Hero presentation (home page top). Identity fields come from profile.json; socials from socials.json — this file only holds what is specific to how the hero renders.",
+  "_sources": "roleLine and bio are DERIVED phrasings of resume facts (GitHub bio 'Machine Learning Engineer'; PDEU B.Tech CS 2023-2027; resume summary 'architecting end-to-end AI solutions from data engineering to scalable deployment'). Reword freely — facts only.",
+  "_fields": {
+    "roleLine": "2-3 short descriptors rendered separated by ' · ', followed by the copy-to-clipboard email. Reference: ['Engineer', 'Polymath'].",
+    "bio": "One-line bio under the name.",
+    "avatarTreatment": "'colored-disc' = reference style (blue disc in light mode, yellow in dark) | 'plain' = image as-is | describe anything else.",
+    "spotifyFallbackText": "Shown if the Spotify API returns nothing — or used INSTEAD of the API when features.spotify is false but you still want the music strip. \"\" = strip hidden entirely when Spotify is off."
+  },
+  "roleLine": ["AI Engineer", "B.Tech CS @ PDEU"],
+  "bio": "Building end-to-end AI solutions — from data engineering to scalable deployment.",
+  "avatarTreatment": "colored-disc",
+  "spotifyFallbackText": ""
+}

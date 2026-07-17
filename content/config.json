@@ -1,0 +1,43 @@
+{
+  "_desc": "Feature flags and section toggles — the ONLY place optional behavior is controlled. null = undecided (the build refuses to run until every flag is explicit).",
+  "_sources": "Current state (final refinement, 2026-07-17): features oneko/visitorCounter/uiSounds/quotes ON, spotify OFF — all confirmed by Mit. Sections ON: blog (3 articles, bodies pending -> Coming Soon), projects, resume, gears, education, certifications. Sections OFF (no data provided yet): setup, terminal, books, movies, achievements, talks, skills (skills data still feeds SEO knowsAbout).",
+  "_fields": {
+    "features.oneko": "Pixel cat that chases the cursor and dodges hero elements.",
+    "features.spotify": "Spotify 'Last played' strip in the hero. Needs Client ID/Secret/Refresh Token in .env.local.",
+    "features.visitorCounter": "Recreate the reference's auth-gated /api/visitors counter.",
+    "features.commandKSearch": "⌘K / Ctrl+K full-text blog search dialog. Requires sections.blog = true.",
+    "features.rss": "RSS feed at /blog/feed.xml. Requires sections.blog = true.",
+    "features.smoothScroll": "Lenis smooth scrolling (reference has it on).",
+    "features.themeToggle": "Dark/light toggle in the header. defaultTheme: 'system' | 'light' | 'dark'.",
+    "sections.*": "true = page + home card + footer link render; false = section disappears everywhere."
+  },
+  "features": {
+    "oneko": true,
+    "spotify": false,
+    "visitorCounter": true,
+    "commandKSearch": true,
+    "rss": true,
+    "smoothScroll": true,
+    "themeToggle": {
+      "enabled": true,
+      "defaultTheme": "system"
+    },
+    "uiSounds": true,
+    "quotes": true
+  },
+  "sections": {
+    "blog": true,
+    "projects": true,
+    "resume": true,
+    "gears": true,
+    "setup": false,
+    "terminal": false,
+    "books": false,
+    "movies": false,
+    "education": true,
+    "certifications": true,
+    "achievements": false,
+    "talks": false,
+    "skills": false
+  }
+}

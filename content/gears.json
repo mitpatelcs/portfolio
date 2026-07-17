@@ -1,0 +1,93 @@
+{
+  "_desc": "/gears page + its card in the home 'Development' section. Categories render in order: numbered=false gives plain link rows (reference Devices style), true gives numbered rows (reference Extensions/Software style). Items may add a 'description' and an 'icon' ('lucide:<name>' or simple-icons slug).",
+  "_sources": "Devices + Amazon purchase links confirmed by Mit (final refinement, 2026-07-17). Web Extensions mirror the reference portfolio's exact list and order per Mit's request. Software list confirmed by Mit.",
+  "_fields": {
+    "subtitle": "Page subtitle.",
+    "homeCardDescription": "One-liner on the home Development card.",
+    "categories": "[{ title, numbered, items: [{ name, description?, icon?, url }] }]. url may be \"\" for plain text."
+  },
+  "subtitle": "My gears and tools I use to get my work done.",
+  "homeCardDescription": "Tools, devices, and software I use to get work done.",
+  "categories": [
+    {
+      "title": "Devices & Accessories",
+      "numbered": false,
+      "items": [
+        {
+          "name": "Apple MacBook Pro M1 Pro",
+          "description": "My current laptop",
+          "icon": "lucide:laptop",
+          "url": "https://www.amazon.com/Apple-MacBook-14-inch-8%E2%80%91core-14%E2%80%91core/dp/B09PGSZDHH"
+        },
+        {
+          "name": "Apple iPhone 14 Pro (128GB)",
+          "description": "",
+          "icon": "lucide:smartphone",
+          "url": "https://www.amazon.in/Apple-iPhone-128GB-Space-Black/dp/B0BDJ7P6NG"
+        },
+        {
+          "name": "Apple AirPods (2nd Generation)",
+          "description": "",
+          "icon": "lucide:headphones",
+          "url": "https://www.amazon.in/Apple-AirPods-with-Charging-Case/dp/B07Q6153FQ"
+        }
+      ]
+    },
+    {
+      "title": "Web Extensions",
+      "numbered": true,
+      "items": [
+        {
+          "name": "Unhook",
+          "url": "https://unhook.app/"
+        },
+        {
+          "name": "uBlock Origin",
+          "url": "https://ublockorigin.com/"
+        },
+        {
+          "name": "React Developer Tools",
+          "url": "https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"
+        },
+        {
+          "name": "daily.dev",
+          "url": "https://daily.dev/"
+        },
+        {
+          "name": "Grammarly",
+          "url": "https://www.grammarly.com/"
+        },
+        {
+          "name": "Wappalyzer",
+          "url": "https://www.wappalyzer.com/"
+        },
+        {
+          "name": "ColorZilla",
+          "url": "https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en"
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "numbered": true,
+      "items": [
+        {
+          "name": "Google Chrome",
+          "url": "https://www.google.com/chrome/"
+        },
+        {
+          "name": "Notion",
+          "url": "https://www.notion.so/desktop"
+        },
+        {
+          "name": "TickTick",
+          "url": "https://ticktick.com/download"
+        },
+        {
+          "name": "VLC Media Player",
+          "url": "https://www.videolan.org/vlc/"
+        }
+      ]
+    }
+  ]
+}
