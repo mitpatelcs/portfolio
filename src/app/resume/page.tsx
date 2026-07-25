@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -17,9 +17,12 @@ export const metadata: Metadata = {
 export default function ResumePage() {
   if (!resume) notFound();
   const isFile = resume.source === 'file';
-  // Hide the native PDF viewer chrome (toolbar + thumbnail pane) for a clean preview.
+  // Clean on-page preview: hide the native PDF viewer chrome (toolbar + thumbnails).
   const previewSrc = isFile ? `${resume.file}#toolbar=0&navpanes=0&view=FitH` : driveToPreview(resume.driveUrl);
-  const downloadHref = isFile ? resume.file : resume.driveUrl;
+  // "View / Download" opens the Drive link (view + download there) when set,
+  // otherwise downloads the self-hosted file directly.
+  const hasDrive = resume.driveUrl.length > 0;
+  const actionHref = hasDrive ? resume.driveUrl : resume.file;
   const downloadName = `${profile.fullName.replace(/\s+/g, '-')}-Resume.pdf`;
 
   return (
@@ -28,14 +31,14 @@ export default function ResumePage() {
         <PageHeader title="Resume" subtitle={resume.subtitle} />
         <div className="animate-in-up flex justify-end" style={{ animationDelay: '0.08s' }}>
           <a
-            href={downloadHref}
-            download={isFile ? downloadName : undefined}
-            target={isFile ? undefined : '_blank'}
+            href={actionHref}
+            target={hasDrive ? '_blank' : undefined}
+            download={hasDrive ? undefined : downloadName}
             rel="noopener noreferrer"
             className={buttonVariants({ variant: 'outline' })}
           >
-            <Download className="size-4" />
-            Download
+            <ExternalLink className="size-4" />
+            View
           </a>
         </div>
         <div

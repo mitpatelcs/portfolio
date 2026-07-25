@@ -1,14 +1,14 @@
 {
   "_desc": "/resume page — H1 + subtitle + embedded PDF (70vh iframe, rounded border).",
-  "_sources": "Self-hosted PDF provided by Mit (2026-07-25), replacing the earlier Google Drive link. The PDF lives at content/files/ and is synced to public/files/ by scripts/sync-images.mjs; 'file' is its public URL path.",
+  "_sources": "Self-hosted PDF (content/files/ -> public/files/) powers the clean on-page preview. 'driveUrl' is the Google Drive link (same file, verified byte-identical 2026-07-25) opened by the 'View / Download' button so viewers can read or download it in Drive.",
   "_fields": {
     "subtitle": "Page subtitle (reference UI copy).",
-    "source": "'drive' | 'file'.",
-    "driveUrl": "Google Drive share URL (used only when source = 'drive').",
-    "file": "Public URL path to a self-hosted PDF. Put the file in content/files/ (synced to public/files/) and reference it as '/files/<name>.pdf'."
+    "source": "'drive' | 'file' — which source powers the embedded preview.",
+    "driveUrl": "Google Drive share URL. Opened by the 'View / Download' button (view + download). If empty, the button downloads the self-hosted file instead.",
+    "file": "Public URL path to the self-hosted PDF (content/files/ -> public/files/), e.g. '/files/<name>.pdf'."
   },
   "subtitle": "View and download my professional resume.",
   "source": "file",
-  "driveUrl": "",
+  "driveUrl": "https://drive.google.com/file/d/1F0fjzsRwBdTDmuXfEaOkOkpxB_DYJpHd/view?usp=sharing",
   "file": "/files/mit-patel-resume.pdf"
 }
