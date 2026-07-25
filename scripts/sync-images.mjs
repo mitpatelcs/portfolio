@@ -1,12 +1,16 @@
 /**
- * Syncs content/images/** -> public/images/** so authors only ever touch content/.
+ * Syncs content assets into public/ so authors only ever touch content/.
+ *   content/images -> public/images   (photos, certificate scans, ...)
+ *   content/files  -> public/files    (resume PDF and other downloadables)
  * Runs automatically before `dev` and `build` (predev/prebuild).
  */
 import fs from 'node:fs';
 import path from 'node:path';
 
-const SRC = path.join(process.cwd(), 'content', 'images');
-const DEST = path.join(process.cwd(), 'public', 'images');
+const PAIRS = [
+  ['images', 'images'],
+  ['files', 'files'],
+];
 
 function syncDir(src, dest) {
   fs.mkdirSync(dest, { recursive: true });
@@ -28,7 +32,9 @@ function syncDir(src, dest) {
   return copied;
 }
 
-if (fs.existsSync(SRC)) {
-  const n = syncDir(SRC, DEST);
-  console.log(`[sync-images] content/images -> public/images (${n} file(s) copied)`);
+for (const [srcName, destName] of PAIRS) {
+  const src = path.join(process.cwd(), 'content', srcName);
+  if (!fs.existsSync(src)) continue;
+  const n = syncDir(src, path.join(process.cwd(), 'public', destName));
+  console.log(`[sync-content] content/${srcName} -> public/${destName} (${n} file(s) copied)`);
 }

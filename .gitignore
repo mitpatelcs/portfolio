@@ -20,8 +20,9 @@ next-env.d.ts
 # vercel
 .vercel
 
-# synced from content/images by scripts/sync-images.mjs — do not edit directly
+# synced from content/ by scripts/sync-images.mjs — do not edit directly
 /public/images/
+/public/files/
 
 # typescript
 *.tsbuildinfo
