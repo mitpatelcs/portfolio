@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import Container from '@/components/common/Container';
 import PageHeader from '@/components/common/PageHeader';
 import { buttonVariants } from '@/components/ui/button';
-import { profile, resume } from '@/lib/data';
+import { resume } from '@/lib/data';
 import { driveToPreview } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -19,11 +19,9 @@ export default function ResumePage() {
   const isFile = resume.source === 'file';
   // Clean on-page preview: hide the native PDF viewer chrome (toolbar + thumbnails).
   const previewSrc = isFile ? `${resume.file}#toolbar=0&navpanes=0&view=FitH` : driveToPreview(resume.driveUrl);
-  // "View / Download" opens the Drive link (view + download there) when set,
-  // otherwise downloads the self-hosted file directly.
-  const hasDrive = resume.driveUrl.length > 0;
-  const actionHref = hasDrive ? resume.driveUrl : resume.file;
-  const downloadName = `${profile.fullName.replace(/\s+/g, '-')}-Resume.pdf`;
+  // "View" opens the resume in a new tab — the Drive link if set, otherwise the
+  // self-hosted PDF (the browser's viewer lets you read and download it there).
+  const viewHref = resume.driveUrl || resume.file;
 
   return (
     <Container>
@@ -31,9 +29,8 @@ export default function ResumePage() {
         <PageHeader title="Resume" subtitle={resume.subtitle} />
         <div className="animate-in-up flex justify-end" style={{ animationDelay: '0.08s' }}>
           <a
-            href={actionHref}
-            target={hasDrive ? '_blank' : undefined}
-            download={hasDrive ? undefined : downloadName}
+            href={viewHref}
+            target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({ variant: 'outline' })}
           >
